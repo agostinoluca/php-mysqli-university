@@ -10,10 +10,14 @@ define('DB_NAME', 'university_test');
 
 //CONNECTION
 $connection = new mysqli(DB_SERVERNAME, DB_USERNAME, DB_PASSWORD, DB_NAME);
-var_dump($connection);
 
 // CHECK CONTROL FOR ERROR
 if ($connection && $connection->connect_error) {
     echo "Connection failed: " . $connection->connect_error;
     die;
 }
+
+$sql_students = "SELECT * FROM `students`";
+$result = $connection->query($sql_students);
+
+var_dump($result);
