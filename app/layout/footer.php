@@ -1,4 +1,7 @@
-<footer>
+<footer class="bg-black w-100 position-fixed bottom-0">
+    <div class="d-flex justify-content-center">
+        <span class="text-secondary p-1 ">Simple web application to manage university data.</span>
+    </div>
 
 </footer>
 
